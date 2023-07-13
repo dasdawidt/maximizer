@@ -16,10 +16,10 @@ Get it on the [Chrome Web Store]()!
 ## Limitations
 
 - Since the user visibly selects the element to maximize, only visible elements can be maximized.
-This can lead too errors when content is wrapped inside a container that isn't visible.
-In result, you may encounter situatios where it's a bit fiddly to select the exact element you want to maximize.
+  This can lead too errors when content is wrapped inside a container that isn't visible.
+  In result, you may encounter situatios where it's a bit fiddly to select the exact element you want to maximize.
 - When a website utilizes iframe elements, the selection is only available inside the iframe in which the context menu option of Maximizer has been triggered.
-This originates in security limitations that browsers implement and cannot to my knowledge cannot be overcome.
+  This originates in security limitations that browsers implement and cannot to my knowledge cannot be overcome.
 - If a element is s´clicked to be maximized, which the website itself responds to when clicked, the maximization can be interrupted
 
 ## Planned Features
@@ -32,3 +32,8 @@ This originates in security limitations that browsers implement and cannot to my
 ### 0.0.1
 
 - Create the ability to select any visible element of a website and make it fill your whole screen
+
+### 0.0.2
+
+- Use the `activeTab` and `scripting` permissions instead of `contentScripts`.
+  This way, the extension only has access to the page if the context menu item is clicked.
