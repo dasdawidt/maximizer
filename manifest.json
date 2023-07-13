@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Maximizer",
     "short_name": "Maximizer",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Maximize anything! - Your screen is the limit.",
     "author": "David Maier",
     "incognito": "split",
