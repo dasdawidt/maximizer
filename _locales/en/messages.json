@@ -1,0 +1,14 @@
+{
+    "name": {
+        "message": "Maximizer"
+    },
+    "shortName": {
+        "message": "Maximizer"
+    },
+    "description": {
+        "message": "Maximize anything! - Your screen is the limit."
+    },
+    "contextMenuItemTitle": {
+        "message": "Maximize something..."
+    }
+}

@@ -42,3 +42,8 @@ Get it on the [Chrome Web Store]()!
 
 - Dynamically add/remove event listeners to/from document instead of using boolean flag.
   This should make the extension more performant.
+
+### 0.1.0
+
+- Add internationalization.
+  Now supporting English, German and Spanish.

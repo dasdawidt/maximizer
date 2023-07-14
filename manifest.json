@@ -1,11 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "Maximizer",
-    "short_name": "Maximizer",
+    "name": "__MSG_name__",
+    "short_name": "__MSG_shortName__",
     "version": "0.0.3",
-    "description": "Maximize anything! - Your screen is the limit.",
+    "description": "__MSG_description__",
     "author": "David Maier",
     "incognito": "split",
+    "default_locale": "en",
     "icons": {
         "128": "images/128.png",
         "512": "images/512.png"

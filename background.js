@@ -11,8 +11,7 @@ chrome.runtime.onInstalled.addListener(() => {
     ];
     chrome.contextMenus.create({
         id: 'maximize',
-        // todo: i18n this line
-        title: 'Maximize something...',
+        title: chrome.i18n.getMessage('contextMenuItemTitle'),
         contexts,
     });
 });
