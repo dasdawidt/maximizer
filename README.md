@@ -47,3 +47,7 @@ Get it on the [Chrome Web Store]()!
 
 - Add internationalization.
   Now supporting English, German and Spanish.
+
+### 0.1.1
+
+- Improve German translation.
