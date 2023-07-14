@@ -51,3 +51,9 @@ Get it on the [Chrome Web Store]()!
 ### 0.1.1
 
 - Improve German translation.
+
+### 0.2.0
+
+- Revert changes from version 0.0.2 because they broke iframe support.
+  For now this is the only way to support them.
+  Looking for a way without host permission.
