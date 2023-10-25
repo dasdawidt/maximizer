@@ -2,7 +2,7 @@
 
 > *Maximize anything! - Your screen is the limit.*
 
-Get it on the [Chrome Web Store]()!
+Get it on the [Chrome Web Store](https://chromewebstore.google.com/detail/maximizer/lmjgdlmpphlpkcbabphldnpicijfdpeb)!
 
 ## Usage
 
