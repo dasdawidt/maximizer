@@ -10,5 +10,11 @@
     },
     "contextMenuItemTitle": {
         "message": "Maximize something..."
+    },
+    "tooltipMaximizeText": {
+        "message": "Select an element to maximize."
+    },
+    "TooltipCancelText": {
+        "message": "Press ESC to cancel."
     }
 }

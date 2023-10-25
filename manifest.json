@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "__MSG_name__",
     "short_name": "__MSG_shortName__",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "__MSG_description__",
     "author": "David Maier",
     "incognito": "split",
@@ -16,17 +16,17 @@
     },
     "content_scripts": [
         {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content.js"
-            ],
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
             "all_frames": true,
             "match_about_blank": true
         }
     ],
-    "permissions": [
-        "contextMenus"
+    "permissions": ["contextMenus"],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*"],
+            "matches": ["<all_urls>"]
+        }
     ]
 }
