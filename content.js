@@ -6,6 +6,7 @@ chrome.runtime.onMessage.addListener((request) => {
 });
 
 const logoSrc = chrome.runtime.getURL("images/512.png");
+const maxZIndex = 2147483647;
 const primaryColorRGB = "250, 128, 114";
 const primaryColor = `rgb(${primaryColorRGB})`;
 const secondayColor = "rgb(255, 212, 207)";
@@ -17,9 +18,31 @@ const listeners = [
     ["keydown", cancelSelection],
 ];
 
-let tooltipNode =
-    htmlToNode(/*html*/ `<div style="position: fixed; bottom: 0; display: none; flex-direction: row; justify-content: center; align-items: center; width: 100%; pointer-events: none;">
-        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 0.5rem; background-color: ${secondayColor}; border: 2px solid ${primaryColor}; color: black; border-radius: 0.5rem; margin: 1rem; padding: 0.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+let tooltipNode = htmlToNode(/*html*/ `
+    <div style="
+            position: fixed;
+            bottom: 0;
+            z-index: ${maxZIndex};
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;">
+        <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: ${secondayColor};
+                border: 2px solid ${primaryColor};
+                color: black;
+                border-radius: 0.5rem;
+                margin: 1rem;
+                padding: 0.5rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
             <img src="${logoSrc}" style="height: 1.2rem; width: auto;" />
             ${chrome.i18n.getMessage("tooltipMaximizeText")}
             ${chrome.i18n.getMessage("tooltipCancelText")}
