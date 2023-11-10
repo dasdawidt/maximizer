@@ -57,3 +57,7 @@ Get it on the [Chrome Web Store](https://chromewebstore.google.com/detail/maximi
 - Revert changes from version 0.0.2 because they broke iframe support.
   For now this is the only way to support them.
   Looking for a way without host permission.
+
+### 0.2.1
+
+- Add popup that explaines how to maximize/abort the maximization process.
